@@ -1,9 +1,6 @@
 import csv
 import os 
 
-#input_csv = os.path.join("...", 'Resources', 'election_data' + '.csv')
-#output_file = os.path.join('Output', 'election_results_' + str(file_num) +'.txt')
-
 input_csv='C:\\Users\\tbnet\\Desktop\\UKED201811DATA5\\02-Homework\\03-Python\\Instructions\\PyPoll\\Resources\\election_data.csv'
 
 total_votes=0
@@ -24,7 +21,9 @@ with open(input_csv) as csv_file:
 prior_candiate= 0
 
 print("Election Results")
+print("-------------------------------")
 print("Total Vote Counts: "+ str(total_votes))
+print("-------------------------------")
 for key, value in vote_count.items():
     print(key + ": " + str(((float(value/total_votes)*100),1)) + "%" + " (" + str(value)+ ")")
 for key, value in vote_count.items():
