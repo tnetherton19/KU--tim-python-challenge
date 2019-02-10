@@ -31,8 +31,9 @@ with open(budget_csv,"r") as budget:
         prev_month= int(row['Revenue'])         
         
 print("Financial Analysis:")
+print("-------------------")
 print("Total Months: "+ str(totalMonths)
-print("Total Revenue: $" + str(totalRevenue))
+print("Total: $" + str(totalRevenue))
 print("Average Revenue Change: "+ str(totalChange)
-print("Greatest Increase in Revenue: "+ str(max_inc[0])+" "+ str(max_inc[1])
-print("Greatest Decrease in Revenue: "+ str(max_dec[0])+" "+ str(max_dec[1])
+print("Greatest Increase in Profits: "+ str(max_inc[0])+" "+ str(max_inc[1])
+print("Greatest Decrease in Profits: "+ str(max_dec[0])+" "+ str(max_dec[1])
